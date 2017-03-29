@@ -38,13 +38,16 @@ header {
    color: #ffc001;
  }
 
+nav {
+  text-align: center;
+}
+
  header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: block;
+  display: inline-block;
   margin-top: 3px;
-  padding-left: 27.75%;
  }
 
  header li {
