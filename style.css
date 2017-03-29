@@ -1,0 +1,139 @@
+
+body {
+  font-family:'Anton', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background: no-repeat;
+  background-color: #FFFFFF;
+}
+
+header {
+  background-color:#000000;
+  color:#FFFFFF;
+  border-bottom: #ffc001 4.5px solid;
+  font-family: sans-serif;
+  height: 110px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ header a h1 {
+   font-family:'Anton', sans-serif;
+   margin: auto;
+   text-align: center;
+   font-size: 40px;
+   color: #ffc001;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: none;
+ }
+
+ a:visited {
+   color: #ffc001;
+ }
+
+ header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  margin-top: 3px;
+  padding-left: 27.75%;
+ }
+
+ header li {
+   text-decoration: none;
+   float: left;
+   padding: 0px 60px 0px 60px;
+   margin-top: 5px;
+   font-family:'Anton', sans-serif;
+   font-size: 20px;
+ }
+
+ p {
+   font-family: sans-serif;
+   font-weight: bold;
+   margin: 0px;
+ }
+
+ section {
+   margin: 0;
+   padding: 0;
+   min-height: 500px;
+   background-image: url(nato.jpg);
+   text-align: right;
+   color: #ffc001;
+   font-size: 50px;
+ }
+
+ .mainnews {
+   padding-top: 390px;
+   padding-right: 15px;
+ }
+.mainnews h3 {
+  margin: 0;
+  padding: 0;
+}
+article {
+  margin: 20px 20px 20px 20px;
+  background-color: #808080;
+  width: auto;
+  height: auto;
+}
+
+.news {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.news img {
+  float: left;
+  overflow: hidden;
+  padding: 10px;
+  max-width: 245px;
+  padding: 10px;
+  height: 130;
+}
+
+.news a {
+  font-size: 40px;
+}
+
+.news p {
+  font-size: 18px;
+}
+
+footer {
+  background-color:#000000;
+  border-top: #ffc001 4.5px solid;
+
+}
+
+footer ul {
+  margin: 0;
+  padding: 10px;
+}
+
+footer ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+
+footer .contacts {
+  color: #ffc001;
+
+}
+ footer p {
+   color: #ffc001;
+   text-align: center;
+   font-family: arial, sans-serif;
+
+ }
