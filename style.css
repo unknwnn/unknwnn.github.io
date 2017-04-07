@@ -1,142 +1,263 @@
-
 body {
-  font-family:'Anton', sans-serif;
-  font-size: 15px;
   margin: 0;
   padding: 0;
-  background: no-repeat;
-  background-color: #FFFFFF;
+  font-family: 'Josefin', sans-serif;
 }
 
+@font-face {
+  font-family: Josefin;
+  src: url(Adequate-ExtraLight.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+
+
 header {
-  background-color:#000000;
-  color:#FFFFFF;
-  border-bottom: #ffc001 4.5px solid;
-  font-family: sans-serif;
-  height: 110px;
+  margin: 0;
+  padding: 0;
+  background-image: url(Banner1.jpg);
+  min-height: 600px;
+  background-repeat: no-repeat;
+}
+
+nav {
+  float: right;
+}
+
+header ul {
+  margin: 0px;
+  padding: 35px;
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 35px;
+  text-align: left;
+  text-decoration: none;
+  color: #cee8d8;
+}
+
+header ul li a {
+  color: #cee8d8;
+}
+
+li a:hover {
+  color: #FFFFFF;
+}
+
+.section1 {
+  padding: 10em 0em 5em 0em;
+  text-align: center;
+}
+
+.section1 h1 {
+  font-size: 3em;
+  font-weight: lighter;
+  color: #ffffff;
+  padding: 0em;
+  margin: 0em 0em 0.7em 0em;
+}
+
+.section1 p {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 0em 0em 1.5em 0em;
+  font-weight: 300;
+}
+
+.section1 a{
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  padding: 15PX 32PX;
+  font-size: 22px;
+  border-radius: 3.5px;
+  border: 1.5px solid #ffffff;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.section1 a:hover {
+  background: rgba(225, 225, 225, 0.3);
+
+}
+
+.section2 {
+  min-width: 500px;
+  background-color: #3ba666;
+  color: #FFFFFF;
+}
+
+ .section2header {
+   text-align: center;
+   padding: 60px 0px 0px 0px;
+ }
+
+ .section2header h2 {
+   font-size: 50px;
+   margin: 0;
+ }
+
+ .section2header p {
+
+ }
+
+ .containericons {
+   padding: 60px 0px 60px 0px;
+ }
+
+.containericons ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.containericons ul li {
+  float: left;
+  text-decoration: none;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+}
+
+.containericons ul li img {
+  border-radius: 100%;
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  height: auto;
+}
+
+.section3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.images {
   margin: 0px;
   padding: 0px;
 }
 
- header a h1 {
-   font-family:'Anton', sans-serif;
-   margin: auto;
-   text-align: center;
-   font-size: 40px;
-   color: #ffc001;
- }
-
- a {
-   text-decoration: none;
- }
-
- a:hover {
-   text-decoration: none;
- }
-
- a:visited {
-   color: #ffc001;
- }
-
-nav {
+.images ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
 
- header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-  margin-top: 3px;
- }
-
- header li {
-   text-decoration: none;
-   float: left;
-   padding: 0px 60px 0px 60px;
-   margin-top: 5px;
-   font-family:'Anton', sans-serif;
-   font-size: 20px;
- }
-
- p {
-   font-family: sans-serif;
-   font-weight: bold;
-   margin: 0px;
- }
-
- section {
-   margin: 0;
-   padding: 0;
-   min-height: 500px;
-   background-image: url(nato.jpg);
-   text-align: right;
-   color: #ffc001;
-   font-size: 50px;
- }
-
- .mainnews {
-   padding-top: 390px;
-   padding-right: 15px;
- }
-.mainnews h3 {
-  margin: 0;
-  padding: 0;
-}
-article {
-  margin: 20px 20px 20px 20px;
-  background-color: #808080;
-  width: auto;
-  height: auto;
-}
-
-.news {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.news img {
+.images ul li {
+  text-decoration: none;
   float: left;
-  overflow: hidden;
-  padding: 10px;
-  max-width: 245px;
-  padding: 10px;
-  height: 130;
+  padding: 20px 30px 20px 30px;
 }
 
-.news a {
-  font-size: 40px;
+.images ul li img {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
 }
 
-.news p {
+.section3header {
+  margin: 50px 0px 50px 0px;
+  font-size: 25px;
+}
+
+.section3 .button2 {
+  padding: 75px 0px 75px 0px;
+}
+
+.section3 a {
+  background-color: transparent;
+  color: #292929;
+  padding: 15px 32px;
   font-size: 18px;
+  border-radius: 3.5px;
+  border: 1.5px solid #292929;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.section3 a:hover {
+  background: rgba(41, 41, 41, 0.3);
 }
 
 footer {
-  background-color:#000000;
-  border-top: #ffc001 4.5px solid;
-
+  background-color: #292929;
+  color: #FFFFFF;
 }
 
-footer ul {
+.listweb {
+  padding: 20px;
+  float: left;
+}
+
+footer .websitesul {
+  display: inline-block;
   margin: 0;
-  padding: 10px;
-}
-
-footer ul li {
-  text-decoration: none;
+  padding: 0;
   list-style: none;
-  font-size: 20px;
+  border-bottom: #666666 solid 1px;
 }
 
-footer .contacts {
-  color: #ffc001;
-
+footer .websitesul li {
+  text-decoration: none;
+  float: left;
+  padding: 10px 20px 5px 20px;
+  display: inline-block;
 }
- footer p {
-   color: #ffc001;
-   text-align: center;
-   font-family: arial, sans-serif;
 
+ footer a {
+   -webkit-transition-duration: 0.4s;
+   transition-duration: 0.4s;
  }
+
+.address {
+  padding: 20px;
+}
+
+ footer .addressul {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   border-bottom: #666666 solid 1px;
+ }
+
+footer .addressul li {
+  text-decoration: none;
+  padding: 10px 20px 5px 20px;
+  display: inline-block;
+}
+
+.mail {
+  padding: 20px;
+}
+
+footer .mailul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: #666666 solid 1px;
+}
+
+footer .mailul li {
+  padding: 10px 20px 5px 20px;
+  display: inline-block;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .copyright p {
+  margin: 0;
+}
