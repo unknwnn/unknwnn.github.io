@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Josefin', sans-serif;
+  font-family: 'Adequate', sans-serif;
 }
 
 @font-face {
-  font-family: Josefin;
+  font-family: Adequate;
   src: url(Adequate-ExtraLight.ttf);
 }
 
@@ -19,7 +19,7 @@ a {
 header {
   margin: 0;
   padding: 0;
-  background-image: url(Banner1.jpg);
+  background-image: url(banner1.jpg);
   min-height: 600px;
   background-repeat: no-repeat;
 }
