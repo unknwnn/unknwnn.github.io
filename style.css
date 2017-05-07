@@ -1,263 +1,611 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Adequate', sans-serif;
+  background-color: none;
+  font-family: Open-Sans;
 }
 
 @font-face {
-  font-family: Adequate;
-  src: url(Adequate-ExtraLight.ttf);
+  font-family: Open-Sans;
+  src: url(fonts/Roboto-Regular.ttf);
 }
 
 a {
   text-decoration: none;
-  color: #4e4e4e;
 }
 
+a:hover {
+  text-decoration: none;
+  color: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 header {
-  margin: 0;
   padding: 0;
-  background-image: url(banner1.jpg);
-  min-height: 600px;
-  background-repeat: no-repeat;
-}
-
-nav {
-  float: right;
-}
-
-header ul {
-  margin: 0px;
-  padding: 35px;
-  list-style: none;
-}
-
-header ul li {
-  display: inline;
-  margin-right: 35px;
-  text-align: left;
-  text-decoration: none;
-  color: #cee8d8;
-}
-
-header ul li a {
-  color: #cee8d8;
-}
-
-li a:hover {
-  color: #FFFFFF;
-}
-
-.section1 {
-  padding: 10em 0em 5em 0em;
-  text-align: center;
-}
-
-.section1 h1 {
-  font-size: 3em;
-  font-weight: lighter;
-  color: #ffffff;
-  padding: 0em;
-  margin: 0em 0em 0.7em 0em;
-}
-
-.section1 p {
-  color: #FFFFFF;
-  font-size: 30px;
-  margin: 0em 0em 1.5em 0em;
-  font-weight: 300;
-}
-
-.section1 a{
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  color: #FFFFFF;
-  padding: 15PX 32PX;
-  font-size: 22px;
-  border-radius: 3.5px;
-  border: 1.5px solid #ffffff;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
-.section1 a:hover {
-  background: rgba(225, 225, 225, 0.3);
-
-}
-
-.section2 {
-  min-width: 500px;
-  background-color: #3ba666;
-  color: #FFFFFF;
-}
-
- .section2header {
-   text-align: center;
-   padding: 60px 0px 0px 0px;
- }
-
- .section2header h2 {
-   font-size: 50px;
-   margin: 0;
- }
-
- .section2header p {
-
- }
-
- .containericons {
-   padding: 60px 0px 60px 0px;
- }
-
-.containericons ul {
-  display: inline-block;
-  list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-.containericons ul li {
-  float: left;
-  text-decoration: none;
-  margin: 0;
-  padding: 0px 20px 0px 20px;
-  text-align: center;
-}
-
-.containericons ul li img {
-  border-radius: 100%;
-  border: 1px solid #FFFFFF;
-  padding: 10px;
-  height: auto;
-}
-
-.section3 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.images {
-  margin: 0px;
-  padding: 0px;
-}
-
-.images ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.images ul li {
-  text-decoration: none;
-  float: left;
-  padding: 20px 30px 20px 30px;
-}
-
-.images ul li img {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  height: auto;
+  background-color: white;
+  z-index: 100;
   width: 100%;
 }
 
-.section3header {
-  margin: 50px 0px 50px 0px;
-  font-size: 25px;
+header a {
+  color: #0F4C85;
 }
 
-.section3 .button2 {
-  padding: 75px 0px 75px 0px;
+
+
+.headerwidth {
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  background-color: white;
+  min-height: 70px;
 }
 
-.section3 a {
-  background-color: transparent;
-  color: #292929;
-  padding: 15px 32px;
+
+.menu-icon {
+  display: hidden;
+  background: url(images/icon_menu2.png) no-repeat center;
+  width: 32px;
+  height: 32px;
+}
+
+.headerlink {
+  margin: 0;
+  padding: 15px 0px 0px 0px;
+  display: block;
+  float: left;
+}
+
+.headerwidth .headerlink a {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Список хедер */
+
+.headerwidth nav {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  float: right;
+  text-transform: uppercase;
+}
+
+.headerwidth ul {
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+  list-style: none;
+}
+
+.headerwidth ul li {
+  display: inline-block;
+  padding: 8.8px;
+}
+
+
+/* Первый слайд */
+
+.section1 {
+  background-image: url(images/NYC.jpg);
+  background-size: COVER;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  max-width: 100%;
+  background-position: center;
+}
+
+.section1width {
+  padding: 0;
+  margin: 0;
+  width: 35%;
+  background: rgba(0, 48, 91, 0.65);
+  height: 100%;
+  text-align: right;
+}
+
+.section1head {
+  padding: 350px 20px 0px 0px;
+  margin: 0;
+}
+
+.section1width .headerp {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  font-weight: none;
+}
+
+.section1width p {
   font-size: 18px;
-  border-radius: 3.5px;
-  border: 1.5px solid #292929;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
 }
 
-.section3 a:hover {
-  background: rgba(41, 41, 41, 0.3);
-}
 
-footer {
-  background-color: #292929;
-  color: #FFFFFF;
-}
+/* Второй слайд */
 
-.listweb {
-  padding: 20px;
-  float: left;
-}
-
-footer .websitesul {
-  display: inline-block;
+.section2 {
   margin: 0;
   padding: 0;
-  list-style: none;
-  border-bottom: #666666 solid 1px;
+  background-color: #ffffff;
+  height: 500px;
 }
 
-footer .websitesul li {
-  text-decoration: none;
+.section2width {
+  padding: 0;
+  width: 35%;
+  background: rgba(234, 244, 246, 1);
+  height: 100%;
   float: left;
-  padding: 10px 20px 5px 20px;
-  display: inline-block;
+  text-align: right;
+  margin: 0px 40px 0px 0px;
 }
 
- footer a {
-   -webkit-transition-duration: 0.4s;
-   transition-duration: 0.4s;
- }
-
-.address {
-  padding: 20px;
+.section2text {
+  margin: 0;
+  padding: 200px 20px 0px 0px;
+  color: #00305B;
 }
 
- footer .addressul {
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   border-bottom: #666666 solid 1px;
- }
-
-footer .addressul li {
-  text-decoration: none;
-  padding: 10px 20px 5px 20px;
-  display: inline-block;
-}
-
-.mail {
-  padding: 20px;
-}
-
-footer .mailul {
-  display: inline-block;
+.section2text .headerp {
   margin: 0;
   padding: 0;
+  font-size: 60px;
+  font-weight: none;
+}
+
+.section2ul {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  width: 90%;
+  color: #0F4C85;
+}
+
+.section2ul ul {
+  margin: 0;
+  padding: 0px;
   list-style: none;
-  border-bottom: #666666 solid 1px;
 }
 
-footer .mailul li {
-  padding: 10px 20px 5px 20px;
-  display: inline-block;
+.section2ul ul li {
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+  float: left;
 }
 
-footer .copyright {
+.section2ul .headulp {
+  font-size: 1.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section2ul .ulp {
+  text-decoration: none;
+}
+
+
+/* Третий слайд */
+
+.section3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #00305b;
+    color: #FFFFFF;
+}
+
+.section3header {
+    margin: 0;
+    padding: 80px 0px 0px 0px;
+}
+
+.section3header .section3p {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.section3text {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.section3text p {
+    padding: 50px 300px 50px 300px;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Четвёртый  слайд */
+
+.section4 {
+  margin: 0;
+  padding: 0;
+  background: rgba(234, 244, 246, 1);
   text-align: center;
 }
 
-footer .copyright p {
+.section4 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.section4 a:hover {
+  text-decoration: none;
+}
+
+.section4 a:visited {
+  text-decoration: none;
+}
+
+.section4header {
+  text-align: center;
   margin: 0;
+  padding: 80px 0px 30px 0px;
+}
+
+.section4header p {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.section4image {
+  margin: 0;
+  padding: 50px 0px 70px 0px;
+}
+
+.section4ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section4ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+
+.section4ul li .image1 img {
+  width: 50%;
+  border-bottom: 1px solid rgba(131, 183, 230, 0.65);
+}
+
+.section4ul li .image1 .name {
+  padding: 5px 0px 0px 0px;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.section4ul li .image1 .phone {
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+}
+
+/* Пятый слайд */
+
+.section5 {
+  background-image: url(images/NYC4jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 600px;
+  color: #ffffff;
+}
+
+.section5 a:hover {
+  text-decoration: none;
+}
+
+.section5 a:visited {
+  text-decoration: none;
+}
+
+.section5 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+.section5width {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 40px 0px 0px;
+  width: 35%;
+  background: rgba(0, 48, 91, 0.65);
+  height: 100%;
+  text-align: right;
+  float: left;
+}
+
+.section5width .headerp {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: none;
+  padding: 250px 20px 0px 0px;
+}
+
+.section5forms {
+  margin: 0;
+  padding: 0;
+}
+
+.section5phead {
+  margin: 0px 0px 30px 0px;
+  padding: 0;
+
+}
+
+.section5phead p {
+  margin: 0;
+  padding: 40px;
+  font-size: 25px;
+}
+
+.section5bold {
+  font-weight: bold;
+}
+
+.section5contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.section5contacts .amap {
+  color: #90D1D8;
+}
+
+.section5contacts .aemail {
+  color: #FFFFFF;
+}
+
+.section5address {
+  margin: 0;
+  padding: 3px;
+}
+
+.section5email {
+  margin: 0;
+  padding: 3px;
+}
+
+.section5number {
+  margin: 0;
+  padding: 3px 0px 25px 0px;
+}
+
+.section5map {
+  margin: 0;
+  padding: 0;
+}
+
+.section5forms2 {
+  margin: 35px 0px 0px 0px;
+  padding: 0;
+}
+
+.section5forms2 p {
+  margin: 0px 0px 20px 0px;
+  padding: 0;
+}
+
+.section5forms3 {
+  margin: 0;
+  padding: 0;
+}
+
+.section5forms3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section5forms3 ul li {
+  margin: 0;
+  padding: 2px 0px 2px 0px;
+}
+
+.section5forms3 ul li form input[type=text] {
+  width: 25%;
+  padding: 7px;
+  border: 0px;
+}
+
+.floatinput {
+  border: 0px;
+  resize: none;
+  margin: 0;
+  padding: 7px;
+  width: 25%;
+  placeholder:
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: Open-Sans;
+}
+
+textarea::-moz-placeholder {
+  font-family: Open-Sans;
+}
+
+.section5button {
+  margin: 0;
+  padding: 0;
+}
+
+.section5button form input[type=button] {
+  background: rgba(65, 183, 196, 1);
+  padding: 5px;
+  margin: 0;
+  border: 0px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #0F4C85;
+}
+
+footer div {
+  padding: 20px;
+}
+
+@media(max-width: 1345px)  {
+  header {
+    position: absolute;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  nav ul, nav:hover ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 15px;
+    background: #FFFFFF;
+    width: 35%;
+    margin: 0;
+    right: 0px;
+    top: 50px;
+  }
+
+  nav:hover ul {
+    display: block;
+ }
+
+ nav li {
+   text-align: center;
+   width: 100%;
+   padding: 15px;
+   margin: 0;
+   border-bottom: 1px solid #0F4C85;
+}
+
+
+
+.AUL  {
+  text-align: right;
+  width: 100%;
+}
+
+ .headerwidth {
+   height: auto;
+   float: none;
+   width: 100%;
+   text-align: center;
+ }
+
+ .headerwidth nav {
+   float: none;
+   text-align: right;
+   padding: 20px 15px 0px 0px;
+ }
+
+  .headerlink {
+    padding-bottom: 15px;
+  }
+
+  .section1width {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section1head {
+    margin: 0;
+    padding: 350px 0px 0px 0px;
+  }
+
+
+  .section2 {
+    height: auto;
+  }
+
+  .section2text {
+    padding: 125px 0px 125px 0px;
+  }
+
+  .section2width {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    float: none;
+    height: auto;
+  }
+
+  .section2ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section2ul ul li {
+    padding: 10px 0px 10px 0px;
+    float: none;
+  }
+
+  .section3 {
+    text-align: none;
+  }
+
+  .section3header {
+    padding: 80px 0px 60px 0px;
+    text-align: center;
+  }
+
+  .section3text p {
+    margin: 0;
+    padding: 25px 25px 25px 25px;
+  }
+
+  .section5 {
+    height: auto;
+    text-align: center;
+  }
+
+  .section5width {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    float: none;
+    height: auto;
+  }
+
+  .section5width .headerp {
+    margin: 0;
+    padding: 100px 0px 100px 0px;
+  }
+
+  .section5button {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .section5button form input[type=button] {
+    padding: 15px;
+    width: 35%;
+    text-align: center;
+  }
 }
