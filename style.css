@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: none;
   font-family: Open-Sans;
 }
 
@@ -498,6 +497,10 @@ footer div {
     display: block;
  }
 
+ .divnav {
+   text-align: right;
+ }
+
  nav li {
    text-align: center;
    width: 100%;
@@ -524,10 +527,15 @@ footer div {
    float: none;
    text-align: right;
    padding: 20px 15px 0px 0px;
+   display: inline-block;
  }
 
   .headerlink {
     padding-bottom: 15px;
+  }
+
+  .headerwidth .headerlink a {
+    font-size: 27px;
   }
 
   .section1width {
