@@ -1,619 +1,602 @@
-body {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+ body {
+   background-color: white;
+   font-family: 'Droid Sans', sans-serif;
+ }
+
+ header {
+   background-color: #e11313;
+   color: #ffffff;
+ }
+
+ header a {
+   color: #ffffff;
+ }
+
+
+ .li1 a:focus {
+   text-decoration: none;
+   color: #ffffff;
+ }
+
+ header ul .li1:hover {
+   text-decoration: none;
+   color: #FFFFFF;
+   transition: 0.5s ease-in-out;
+   -webkit-transition: 0.35s ease-in;
+   transition: 0.35s ease-in;
+   text-decoration: none;
+   background-color: #000000;
+ }
+
+
+ .headera {
+   margin: 10px 0px 0px 0px;
+   padding: 0;
+   font-size: 65px;
+   text-decoration: none;
+ }
+
+ .headera:focus {
+   color: #ffffff;
+   text-decoration: none;
+ }
+
+ .headera:hover {
+   text-decoration: none;
+   color: #ffffff;
+ }
+
+.menu {
   padding: 0;
-  font-family: Open-Sans;
+  margin: 0;
 }
 
-@font-face {
-  font-family: Open-Sans;
-  src: url(fonts/Roboto-Regular.ttf);
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-a {
+.menu a:hover {
+  color: #ffffff;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
-  color: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-header {
+.menu ul {
   padding: 0;
   margin: 0;
-  background-color: white;
-  z-index: 100;
-  width: 100%;
-}
-
-header a {
-  color: #0F4C85;
-}
-
-
-
-.headerwidth {
-  margin: 0 auto;
-  padding: 0;
-  width: 60%;
-  background-color: white;
-  min-height: 70px;
-}
-
-
-.menu-icon {
-  display: hidden;
-  background: url(images/icon_menu2.png) no-repeat center;
-  width: 32px;
-  height: 32px;
-}
-
-.headerlink {
-  margin: 0;
-  padding: 15px 0px 0px 0px;
-  display: block;
-  float: left;
-}
-
-.headerwidth .headerlink a {
-  font-size: 32px;
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Список хедер */
-
-.headerwidth nav {
-  margin: 0;
-  padding: 0px 0px 0px 0px;
-  float: right;
-  text-transform: uppercase;
-}
-
-.headerwidth ul {
-  margin: 0;
-  padding: 20px 0px 0px 0px;
   list-style: none;
 }
 
-.headerwidth ul li {
+.menu ul li {
+  position: relative;
+  float: left;
+  transition: 0.35s ease-in;
+  -webkit-transition: 0.35s ease-in;
+}
+
+.li1 {
+  text-decoration: none;
+}
+
+.li1:hover {
+  text-decoration: none;
+}
+
+.li1:active {
+  text-decoration:
+}
+
+.menu ul li a {
   display: inline-block;
-  padding: 8.8px;
+  padding: 38px;
+  font-size: 24px;
+  text-transform: uppercase;
+  -webkit-transition: 0.35s ease-in;
+  transition: 0.35s ease-in;
+}
+
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  -webkit-transition: 0.35s ease-in;
+  transition: 0.35s ease-in;
+}
+
+.menu ul li ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li ul li a {
+  padding: 10px 31px;
+  background-color: #3a3a3c;
+  color: #ffffff;
+  width: 200px;
+  font-size: 14px;
+  display: block;
+}
+
+
+
+.menu ul li:hover ul {
+  display: block;
+  z-index: 9000;
+  -webkit-transition: 0.35s ease-in;
+  transition: 0.35s ease-in;
+}
+
+.menu ul li:hover ul a:hover  {
+  background-color: #242426;
+  transition: 0.4s;
 }
 
 
 /* Первый слайд */
 
-.section1 {
-  background-image: url(images/NYC.jpg);
-  background-size: COVER;
-  height: 800px;
-  margin: 0;
-  padding: 0;
+.slider1 {
   background-repeat: no-repeat;
-  color: #ffffff;
+  background-image: url(images/truck1.jpg);
+  height: 870px;
   max-width: 100%;
   background-position: center;
+  background-size: cover;
+  color: #ffffff;
 }
 
-.section1width {
-  padding: 0;
+.slider1content {
+  padding: 250px 0px 10px 0px;
   margin: 0;
-  width: 35%;
-  background: rgba(0, 48, 91, 0.65);
-  height: 100%;
-  text-align: right;
+  color: #ffffff;
+  width: auto;
 }
 
-.section1head {
-  padding: 350px 20px 0px 0px;
-  margin: 0;
+.slider1content .header {
+  font-size: 74px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
-.section1width .headerp {
-  margin: 0;
-  padding: 0;
-  font-size: 60px;
-  font-weight: none;
-}
-
-.section1width p {
-  font-size: 18px;
-}
-
 
 /* Второй слайд */
 
-.section2 {
+.slider2 {
+  background-color: #e11313;
+  color: #ffffff;
+}
+
+.slider2text {
   margin: 0;
-  padding: 0;
+  padding: 63px 0px 70px 0px;
+  text-align: center;
+}
+
+.slider2text h1 {
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+}
+
+.slider2text h4 {
+  font-weight: bold;
+  padding: 20px 0px 25px 0px;
+}
+
+.slider2text p {
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+}
+
+.slider2text a {
+  color: #242426;
   background-color: #ffffff;
-  height: 500px;
-}
-
-.section2width {
-  padding: 0;
-  width: 35%;
-  background: rgba(234, 244, 246, 1);
-  height: 100%;
-  float: left;
-  text-align: right;
-  margin: 0px 40px 0px 0px;
-}
-
-.section2text {
-  margin: 0;
-  padding: 200px 20px 0px 0px;
-  color: #00305B;
-}
-
-.section2text .headerp {
-  margin: 0;
-  padding: 0;
-  font-size: 60px;
-  font-weight: none;
-}
-
-.section2ul {
-  margin: 0;
-  padding: 0px 0px 0px 0px;
-  width: 90%;
-  color: #0F4C85;
-}
-
-.section2ul ul {
-  margin: 0;
-  padding: 0px;
-  list-style: none;
-}
-
-.section2ul ul li {
-  margin: 0;
-  padding: 20px;
-  text-decoration: none;
-  float: left;
-}
-
-.section2ul .headulp {
-  font-size: 1.6em;
-  text-decoration: none;
+  padding: 12px 25px;
+  font-size: 30px;
+  font-weight: bold;
   text-transform: uppercase;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
-.section2ul .ulp {
+.slider2text a:hover {
   text-decoration: none;
+  background-color: #242426;
+  color: #ffffff;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 
 /* Третий слайд */
 
-.section3 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #00305b;
-    color: #FFFFFF;
-}
-
-.section3header {
-    margin: 0;
-    padding: 80px 0px 0px 0px;
-}
-
-.section3header .section3p {
-    font-size: 45px;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.section3text {
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-}
-
-.section3text p {
-    padding: 50px 300px 50px 300px;
-    font-size: 18px;
-    margin: 0;
-}
-
-/* Четвёртый  слайд */
-
-.section4 {
+.slider3 {
   margin: 0;
-  padding: 0;
-  background: rgba(234, 244, 246, 1);
-  text-align: center;
+  padding: 0px 0px 0px 0px;
+    background-color: #242426;
 }
 
-.section4 a {
-  text-decoration: none;
-  color: #000000;
+.slider3text {
+  background-color: #242426;
+  color: #ffffff;
+  padding: 63px 22px 0px 0px;
+
 }
 
-.section4 a:hover {
-  text-decoration: none;
-}
-
-.section4 a:visited {
-  text-decoration: none;
-}
-
-.section4header {
-  text-align: center;
+.slider3text h1 {
+  font-weight: bold;
+  font-size: 55px;
   margin: 0;
-  padding: 80px 0px 30px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
-.section4header p {
-  font-size: 45px;
+.slider3text h4 {
+  font-weight: bold;
+  padding: 20px 0px 30px 0px;
+}
+
+.slider3text p {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 60px 0px;
+}
+
+.slider3text a {
+  color: #ffffff;
+  background-color: #e11313;
+  padding: 12px 25px;
+  font-size: 30px;
+  font-weight: bold;
   text-transform: uppercase;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
-.section4image {
-  margin: 0;
-  padding: 50px 0px 70px 0px;
+.slider3text a:hover {
+  text-decoration: none;
+  background-color: #3a3a3c;
+  color: #ffffff;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
-.section4ul {
+.slider3list {
   margin: 0;
-  padding: 0;
+  color: #ffffff;
+  background-color: #242426;
+  padding: 63px 0px 70px 0px;
+}
+
+.slider3list h1 {
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+  padding: 0px 0px 0px 22px;
+}
+
+.slider3list ul {
   list-style: none;
-}
-
-.section4ul li {
-  display: inline-block;
+  margin: 0;
   padding: 0;
-  margin: 0;
 }
 
-
-.section4ul li .image1 img {
-  width: 50%;
-  border-bottom: 1px solid rgba(131, 183, 230, 0.65);
+.slider3list ul li {
+  margin: 19px;
+  padding: 0;
 }
 
-.section4ul li .image1 .name {
-  padding: 5px 0px 0px 0px;
-  margin: 0;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+.slider3list ul li a {
+  padding: 14px 30px 13px 22px ;
+  text-transform: uppercase;
+  font-size: 25px;
+  transition: 0.4s ease;
+  border-bottom: solid 2px rgba(209, 209, 209, 0.2);
+  z-index: 9999;
 }
 
-.section4ul li .image1 .phone {
+.slider3list ul li a:hover {
+  transition: 0.4s ease;
+  background-color: #e11313;
+}
+
+.slider4 {
+  background-image: url(images/truck7.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Четвёртый слайд */
+
+.slider4text {
+  text-align: left;
   margin: 0;
-  padding: 10px 0px 10px 0px;
+  padding: 63px 0px 70px 0px;
+}
+
+.slider4text h1  {
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider4text p {
+  margin: 0;
+  padding: 20px 0px 60px 0px;
+}
+
+.nopadding {
+  padding: 0;
 }
 
 /* Пятый слайд */
 
-.section5 {
-  background-image: url(images/NYC4jpg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.slider5 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  background-color: #ebebeb;
+}
+
+.slider5div {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  height: 600px;
+}
+
+.slider5text {
+  margin: 0;
+  padding: 63px 0px 70px 0px;
+  text-align: left;
+}
+
+.slider5text h1 {
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+  color: #242426;
+}
+
+.slider5text h4 {
+  font-weight: bold;
+  padding: 20px 0px 30px 0px;
+  color: #e11313;
+}
+
+.slider5text p {
+  color: #000000;
+  padding: 0px 0px 60px 0px;
+  margin: 0;
+}
+
+.slider5text a {
+  color: #ffffff;
+  background-color: #e11313;
+  padding: 12px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
+.slider5text a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+  background-color: #3a3a3c;
   color: #ffffff;
 }
 
-.section5 a:hover {
-  text-decoration: none;
+/* Шестой слайд */
+
+.section6 {
+  background-color: #3a3a3c;
+  color: #ffffff;
 }
 
-.section5 a:visited {
-  text-decoration: none;
-}
-
-.section5 a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-
-.section5width {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 40px 0px 0px;
-  width: 35%;
-  background: rgba(0, 48, 91, 0.65);
-  height: 100%;
-  text-align: right;
-  float: left;
-}
-
-.section5width .headerp {
+.section6list {
   margin: 0;
-  padding: 0;
-  font-size: 45px;
-  font-weight: none;
-  padding: 250px 20px 0px 0px;
 }
 
-.section5forms {
-  margin: 0;
-  padding: 0;
-}
-
-.section5phead {
-  margin: 0px 0px 30px 0px;
-  padding: 0;
-
-}
-
-.section5phead p {
-  margin: 0;
-  padding: 40px;
-  font-size: 25px;
-}
-
-.section5bold {
-  font-weight: bold;
-}
-
-.section5contacts {
-  margin: 0;
-  padding: 0;
-}
-
-.section5contacts .amap {
-  color: #90D1D8;
-}
-
-.section5contacts .aemail {
-  color: #FFFFFF;
-}
-
-.section5address {
-  margin: 0;
-  padding: 3px;
-}
-
-.section5email {
-  margin: 0;
-  padding: 3px;
-}
-
-.section5number {
-  margin: 0;
-  padding: 3px 0px 25px 0px;
-}
-
-.section5map {
-  margin: 0;
-  padding: 0;
-}
-
-.section5forms2 {
-  margin: 35px 0px 0px 0px;
-  padding: 0;
-}
-
-.section5forms2 p {
-  margin: 0px 0px 20px 0px;
-  padding: 0;
-}
-
-.section5forms3 {
-  margin: 0;
-  padding: 0;
-}
-
-.section5forms3 ul {
-  margin: 0;
-  padding: 0;
+.section6list ul {
   list-style: none;
+  padding: 63px 0px 40px 0px;
 }
 
-.section5forms3 ul li {
-  margin: 0;
-  padding: 2px 0px 2px 0px;
-}
-
-.section5forms3 ul li form input[type=text] {
-  width: 25%;
-  padding: 7px;
-  border: 0px;
-}
-
-.floatinput {
-  border: 0px;
-  resize: none;
-  margin: 0;
-  padding: 7px;
-  width: 25%;
-  placeholder:
-}
-
-textarea::-webkit-input-placeholder {
-  font-family: Open-Sans;
-}
-
-textarea::-moz-placeholder {
-  font-family: Open-Sans;
-}
-
-.section5button {
+.section6list ul li {
   margin: 0;
   padding: 0;
 }
 
-.section5button form input[type=button] {
-  background: rgba(65, 183, 196, 1);
-  padding: 5px;
+.section6list ul li a i {
+  font-size: 60px;
+  color: #ffffff;
+  background-color: #e11313;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.section6list ul li .atext {
+  font-weight: bold;
+  font-size: 37px;
   margin: 0;
-  border: 0px;
-  color: #FFFFFF;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 0;
+  color: #ffffff;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  padding-left: 20px;
+}
+
+.section6list ul li .atext:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  color: #e11313;
+  text-decoration: none;
+}
+
+/* Седьмой слайд */
+
+.section7 {
+  color: #ffffff;
+  background-color: #e11313;
+  text-align: center;
+  padding: 63px 0px 70px 0px;
+}
+
+.section7 h1 {
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
+}
+
+.section7 h4 {
+  font-weight: bold;
+  padding: 20px 0px 25px 0px;
+}
+
+.section7 p {
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+}
+
+.section7 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.section7 ul li {
+  float: left;
+  display: inline-block;
+}
+
+.section7 ul li a i {
+  font-size: 45px;
+  color: #ffffff;
+  background-color: #3a3a3c;
+  padding: 20px;
+  margin-right: 50px;
+  width: 90px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.section7 ul li a i:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  background-color: #ffffff;
+  color: #3a3a3a;
 }
 
 footer {
-  background-color: #FFFFFF;
-  text-align: center;
-  color: #0F4C85;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 15px 0px;
 }
 
-footer div {
-  padding: 20px;
+footer p {
+  margin: 0;
+  padding: 0px 10px 0px 0px;
+  float: left;
 }
 
-@media(max-width: 1345px)  {
-  header {
-    position: absolute;
+footer a {
+  color: #ffffff;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+footer a:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  color: #e11313;
+  text-decoration: none;
+}
+
+@media(max-width: 768px) {
+   header {
+     text-align: center;
+   }
+
+
+   .menu li {
+     margin: 0;
+     width: 100%;
+     float: none;
+   }
+
+   .menu ul li a {
+     font-size: 24px;
+   }
+
+   .menu ul li ul li a {
+     font-size: 24px;
+     margin: 0;
+     border-bottom: solid 1px #ffffff;
+     display: inline-block;
+     padding: 38px;
+   }
+
+   .menu ul li ul li {
+     padding: 0;
+     margin: 0;
+   }
+
+   .nomarginphone {
+     margin: 0;
+   }
+
+  .slider3list ul li a {
+    padding: 0;
   }
 
-  .menu-icon {
-    display: inline-block;
+  .slider1content .header {
+    font-size: 45px;
   }
 
-  nav ul, nav:hover ul {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    padding: 15px;
-    background: #FFFFFF;
-    width: 35%;
+  .slider2text h1 {
+    font-weight: bold;
+    font-size: 35px;
     margin: 0;
-    right: 0px;
-    top: 50px;
   }
 
-  nav:hover ul {
+  .slider3text h1 {
+    font-size: 35px;
+  }
+
+  .slider3list h1 {
+    font-size: 35px;
+    padding: 0;
+  }
+
+  .slider4text h1 {
+    font-size: 30px;
+  }
+
+  .section7 ul li {
     display: block;
- }
+    float: none;
+  }
 
- .divnav {
-   text-align: right;
- }
-
- nav li {
-   text-align: center;
-   width: 100%;
-   padding: 15px;
-   margin: 0;
-   border-bottom: 1px solid #0F4C85;
+  .section7 ul li a i {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
-
-
-.AUL  {
-  text-align: right;
-  width: 100%;
-}
-
- .headerwidth {
-   height: auto;
-   float: none;
-   width: 100%;
-   text-align: center;
- }
-
- .headerwidth nav {
-   float: none;
-   text-align: right;
-   padding: 20px 15px 0px 0px;
-   display: inline-block;
- }
-
-  .headerlink {
-    padding-bottom: 15px;
+@media(max-width: 1200px) {
+  .menu ul li a {
+    font-size: 20px;
   }
 
-  .headerwidth .headerlink a {
-    font-size: 27px;
-  }
-
-  .section1width {
-    width: 100%;
-    text-align: center;
-  }
-
-  .section1head {
-    margin: 0;
-    padding: 350px 0px 0px 0px;
-  }
-
-
-  .section2 {
-    height: auto;
-  }
-
-  .section2text {
-    padding: 125px 0px 125px 0px;
-  }
-
-  .section2width {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    float: none;
-    height: auto;
-  }
-
-  .section2ul {
-    width: 100%;
-    text-align: center;
-  }
-
-  .section2ul ul li {
-    padding: 10px 0px 10px 0px;
-    float: none;
-  }
-
-  .section3 {
-    text-align: none;
-  }
-
-  .section3header {
-    padding: 80px 0px 60px 0px;
-    text-align: center;
-  }
-
-  .section3text p {
-    margin: 0;
-    padding: 25px 25px 25px 25px;
-  }
-
-  .section5 {
-    height: auto;
-    text-align: center;
-  }
-
-  .section5width {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    float: none;
-    height: auto;
-  }
-
-  .section5width .headerp {
-    margin: 0;
-    padding: 100px 0px 100px 0px;
-  }
-
-  .section5button {
-    padding: 0px 0px 10px 0px;
-  }
-
-  .section5button form input[type=button] {
-    padding: 15px;
-    width: 35%;
-    text-align: center;
+  .menu ul li {
+    float: left;
   }
 }
